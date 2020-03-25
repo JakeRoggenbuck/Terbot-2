@@ -1,0 +1,3 @@
+TERMITE_CONFIG=$(ls ~/.config/termite/dots/ | fzf --reverse)
+cp -f ~/.config/termite/dots/$TERMITE_CONFIG ~/.config/termite/config
+echo "config set to" $TERMITE_CONFIG
